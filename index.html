@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Find the Fruit: Designing a Zero-Shot Sim2Real Deep RL Planner for Occlusion Aware Plant Manipulation">
+  <meta name="keywords" content="Create images in any style!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find the Fruit: Designing a Zero-Shot Sim2Real Deep RL Planner for Occlusion Aware Plant Manipulation</title>
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFYY6RZSFF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CFYY6RZSFF');
+</script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+
+</head>
+
+<body>
+
+  <section class="hero has-video-bg" id="video-banner">
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="video/banner.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <!-- <h1 class="title">Find the Fruit</h1>
+        <h2 class="subtitle">Zero-shot RL framework for plant manipulation</h2> -->
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Find the Fruit: Designing a Zero-Shot Sim2Real Deep RL Planner for Occlusion Aware Plant Manipulation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=pSmoZbgAAAAJ&hl=en&oi=ao">Nitesh Subedi</a><sup>1,*</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?hl=en&user=K5WYa34AAAAJ">Hsin-Jung Yang</a><sup>1,*</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=guk0mCkAAAAJ&hl=en">Devesh K. Jha</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=-rmRjqIAAAAJ&hl=en&oi=ao">Soumik Sarkar</a><sup>1</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Iowa State University,</span>&nbsp;
+              <span class="author-block"><sup>2</sup>Mitsubishi Electric Research Laboratories</span>&nbsp;
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>*</sup>Equal Contribution</span>&nbsp
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2505.16547"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"> 
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <!-- <span class="link-block">
+                  <a href="https://github.com/hjy77/CarlaScenGenRL.git" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-2">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              This paper presents an end-to-end deep reinforcement learning (RL) framework for occlusion-aware robotic manipulation in cluttered plant environments. Our approach enables a robot to interact with a deformable plant to reveal hidden objects of interest, such as fruits, using multimodal observations. We decouple the kinematic planning problem from robot control to simplify zeroshot sim2real transfer for the trained policy. Our results demonstrate that the trained policy, deployed using our framework, achieves up to 86.7% success in real-world trials across diverse initial conditions. Our findings pave the way toward autonomous, perception-driven agricultural robots that intelligently interact with complex foliage plants to ”find the fruit” in challenging occluded scenarios, without the need for explicitly designed geometric and dynamic models of every plant scenario.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+
+  <!-- Method section --> 
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2 has-text-centered">Method</h2>
+        <div class="carousel">
+          <div class="item has-text-centered">
+            <img src="static/images/framework.png" alt="Step 1: Fruit is initially occluded">
+            <p class="mt-2", style ="max-width: 800px; margin: auto; text-align: center;">Our method adopts a hierarchical control structure to bridge the gap between task planning and low-level actuation. The high-level RL-based planner operates in task-configuration space, while the low-level controller translates the output of the RL planner into actuator commands.</p>
+          </div>
+          <div class="item has-text-centered">
+            <img src="static/images/training.png" alt="Step 2: The robot begins to interact with the plant">
+            <p class="mt-2", style ="max-width: 800px; margin: auto; text-align: center;">During training, the RL agent interacts with a simulation environment representing cluttered plant scenarios. The agent learns a policy using multimodal observations and rewards, enabling the development of kinematic exploration behaviors to expose occluded fruits.</p>
+          </div>
+          <div class="item has-text-centered">
+            <img src="static/images/deployment.png" alt="Step 3: Fruit becomes partially visible">
+            <p class="mt-2", style ="max-width: 800px; margin: auto; text-align: center;">In deployment, the trained RL policy receives real-time RGB-D and proprioceptive inputs and generates task-space actions. These are passed to the low-level controller onboard the physical robot, enabling closed-loop interaction with real plants despite environmental variability.</p>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Video grid single ref -->
+  <section class="section hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column custom-width">
+            <h2 class="title is-2">Results</h2>
+            <div class="content has-text-justified">
+              <td colspan="3">
+                <video width="2160" muted playsinline autoplay controls style="border-radius: 20px;">
+                  <source src="video/results.mp4" type="video/mp4">
+                </video>
+              </td>
+            </div>
+          </div>
+        </div>
+        <p><br></p>
+      </div>
+    </div>
+  </section>
+  <!-- End video grid single ref -->
+  
+
+  <!-- Video grid Extension -->
+  <!-- <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="section-title">
+          <h2 class="title is-2 is-centered">More Examples</h2>
+        </div>
+  
+        <div id="results-carousel-more" class="carousel results-carousel">
+  
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/more_1.png"
+                     alt="Puppet."/>
+            </div>
+          </div>
+  
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/more_2.png"
+                     alt="Puppet."/>
+            </div>
+          </div>
+  
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/more_3.png"
+                     alt="Puppet."/>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End video grid multi ref -->
+
+  <!-- Acknowledgements -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Acknowledgements</h2>
+      <div class="content has-text-justified">
+        <p>
+          This work is jointly funded from NSF-USDA COALESCE grant #2021-67021-34418 and AIIRA grant #2021-67021-35329.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{subedi2025find,
+        title={Find the Fruit: Designing a Zero-Shot Sim2Real Deep RL Planner for Occlusion Aware Plant Manipulation},
+        author={Subedi, Nitesh and Yang, Hsin-Jung and Jha, Devesh K and Sarkar, Soumik},
+        journal={arXiv preprint arXiv:2505.16547},
+        year={2025}
+      }</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <!-- <div class="content has-text-centered">
+        <a class="icon-link"
+           href="./static/videos/nerfies_paper.pdf">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div> -->
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                                                  href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              Website source code based on the <a
+                href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
