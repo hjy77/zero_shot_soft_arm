@@ -34,26 +34,12 @@ $(document).ready(function() {
 			slidesToShow: 1,
 			loop: true,
 			infinite: true,
-			autoplay: true,
+			autoplay: false,
 			autoplaySpeed: 3000,
-      pagination: false,
-
     }
 
 		// Initialize all div with carousel class
     var carousels = bulmaCarousel.attach('.carousel', options);
-
-    carousels.forEach(function(carousel) {
-      const carouselElement = carousel.element;
-    
-      carouselElement.addEventListener('mouseenter', () => {
-        carousel.pause();  // pause autoplay
-      });
-    
-      carouselElement.addEventListener('mouseleave', () => {
-        carousel.start();  // resume autoplay
-      });
-    });
 
     // Loop on each carousel initialized
     for(var i = 0; i < carousels.length; i++) {
@@ -90,9 +76,3 @@ $(document).ready(function() {
     bulmaSlider.attach();
 
 })
-
-window.addEventListener('orientationchange', () => {
-  setTimeout(() => {
-    window.dispatchEvent(new Event('resize'));
-  }, 300);
-});
