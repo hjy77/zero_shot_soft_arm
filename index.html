@@ -41,18 +41,16 @@
 </head>
 
 <body>
-
+<!-- 
   <section class="hero has-video-bg" id="video-banner">
     <video autoplay muted loop playsinline id="bg-video">
       <source src="video/banner.mp4" type="video/mp4" />
     </video>
     <div class="hero-body">
       <div class="container has-text-centered">
-        <!-- <h1 class="title">Find the Fruit</h1>
-        <h2 class="subtitle">Zero-shot RL framework for plant manipulation</h2> -->
       </div>
     </div>
-  </section>
+  </section> -->
   
 
   <section class="hero">
@@ -126,7 +124,7 @@
           <h2 class="title is-2">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              This paper presents an end-to-end deep reinforcement learning (RL) framework for occlusion-aware robotic manipulation in cluttered plant environments. Our approach enables a robot to interact with a deformable plant to reveal hidden objects of interest, such as fruits, using multimodal observations. We decouple the kinematic planning problem from robot control to simplify zeroshot sim2real transfer for the trained policy. Our results demonstrate that the trained policy, deployed using our framework, achieves up to 86.7% success in real-world trials across diverse initial conditions. Our findings pave the way toward autonomous, perception-driven agricultural robots that intelligently interact with complex foliage plants to ”find the fruit” in challenging occluded scenarios, without the need for explicitly designed geometric and dynamic models of every plant scenario.
+              Soft continuum arms (SCAs) soft and deformable nature presents challenges in modeling and control due to their infinite degrees of freedom and non-linear behavior. This work introduces a reinforcement learning (RL)-based framework for visual servoing tasks on SCAs with zero-shot sim-to-real transfer capabilities, demonstrated on a single section pneumatic manipulator capable of bending and twisting. The framework decouples kinematics from mechanical properties using an RL kinematic controller for motion planning and a local controller for actuation refinement, leveraging minimal sensing with visual feedback. Trained entirely in simulation, the RL controller achieved a 99.8% success rate. When deployed on hardware, it achieved a 67% success rate in zero-shot sim-to-real transfer, demonstrating robustness and adaptability. This approach offers a scalable solution for SCAs in 3D visual servoing, with potential for further refinement and expanded applications.
             </p>
           </div>
         </div>
